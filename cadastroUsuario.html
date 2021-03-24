@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="./views/styles/style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    </head>
+    <body>
+        <div class="whiteboard home">
+            <a class="home" href="./index.html"><h1 class="titulo">&lt Amigo Nerd &gt</h1></a>
+        </div>
+        
+        <div class="whiteboard">
+            <h2 class="titulo">Cadastrar Usuário</h2>
+        </div>
+        <div  class="container" id='form'>
+            <!-- Dados Pessoais -->
+            <div class="whiteboard">
+                <label for='nome'>Nome: </label>
+                <input 
+                    type='text'
+                    id='nome' 
+                    placeholder='Insira seu nome'
+                />
+            </div>
+
+            <div class="whiteboard">
+                <label for='nascimento'>Data de Nascimento: </label>
+                <input 
+                    type='date' 
+                    id='nascimento'
+                />
+            </div>
+
+            <div class="whiteboard">
+                <label for='sexo'>Sexo:</label>
+                <select id='sexo'>
+                    <option value='Masculino'>Masculino</option>
+                    <option value='Feminino'>Feminino</option>
+                </select>
+            </div>
+
+            <div class="whiteboard">
+                <label for='email'>E-mail</label>
+                <input 
+                    type='email' 
+                    id='email'
+                    placeholder='Insira seu e-mail'
+                />
+            </div>
+            <!-- Dados do Usuário -->
+            <div class="whiteboard">
+                <label for='nomeUsuario'>Digite o nome do usuário: </label>
+                <input
+                    type='text' 
+                    id='nomeUsuario' 
+                    placeholder='Insira seu nome de usuário'
+                />
+            </div>
+            <div class="whiteboard">
+                <label for='senha'>Digite sua senha: </label>
+                <input 
+                    type='password' 
+                    id='senha' 
+                    placeholder='Insira sua senha'
+                />
+            </div>
+            <div class="whiteboard">
+                <label for='senhaConfirm'>Confirme sua senha: </label>
+                <input 
+                    type='password' 
+                    id='senhaConfirm' 
+                    placeholder='Insira novamente sua senha'
+                />
+            </div>
+            <div class="whiteboard">
+                <button class="botao" id='cadastrar' onclick="cadastrarUsuario()">Cadastrar</button>
+            </div>
+        </div>
+        <script src="src/scripts/cadastrarUsuario.js"></script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="./views/styles/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    </head>
+    <body>
+        <div class="whiteboard">
+            <a class="home" href="./index.html"><h1 class="titulo">&lt Amigo Nerd &gt</h1></a>
+        </div>
+        
+        <div class="whiteboard">
+            <h2 class="titulo">Cadastrar Plano</h2>
+        </div>
+        <div class="container" id="formulario">
+            <div id="cabecalho">
+                <div class="whiteboard">
+                    <label for="disciplina">Nome da disciplina: </label>
+                    <input 
+                        id="disciplina"
+                        type="text"
+                        placeholder="Nome da Disciplina"
+                        size="55"
+                    >
+                </div>
+                <div class="whiteboard">
+                    <label for="ementa">Ementa: </label>
+                    <input
+                        id="ementa"
+                        type="text"
+                        placeholder="Ementa"
+                        size="55"
+                    >
+                </div>
+                <div class="whiteboard">
+                    <label for="descricao">Descrição</label>
+                    <textarea
+                        id="descricao"
+                        placeholder="Descrição do Plano"
+                        rows="5"
+                        cols="50"
+                    ></textarea>
+                </div>
+                <div class="whiteboard">
+                    <label for="referencias">Referências: </label>
+                    <textarea
+                        id="referencias"
+                        placeholder="Referências utilizadas"
+                        rows="3"
+                        cols="50"
+                    ></textarea>
+                </div>
+            </div>
+            
+            <div class="whiteboard" id="conteudoCurso">
+                <h3>Conteúdo do curso</h3>
+                <div id="linhas">
+                
+                </div>
+
+                <div id="botoes">
+                    <button class="botao botaopequeno" id='addLinha'>Adicionar Linha</button>
+                    <button class="botao botaopequeno" id='remLinha'>Remover Linha</button>
+                </div>
+            </div>
+
+            
+
+            <div class="whiteboard" id="cadastrar">
+                <button class="botao" id='cadastrarPlano'>Cadastrar Plano</button>
+            </div>
+        </div>
+    <script src="src/scripts/cadastrarPlano.js"></script>
+    </body>
+</html>

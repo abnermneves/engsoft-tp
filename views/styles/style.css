@@ -1,0 +1,130 @@
+:root {
+    --verde: #154047;
+    --whitewidth: 800px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--verde);
+}
+
+div.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    background-color: var(--verde);
+}
+
+div.whiteboard,
+fieldset.whiteboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    width: var(--whitewidth);
+    margin: 10px;
+    background-color: ghostwhite;
+    transition: transform 0.3s;
+    
+}
+
+div.whiteboard:hover,
+fieldset.whiteboard:hover{
+    transform: scale(1.02);
+}
+
+input,
+select,
+textarea{
+    width: calc(var(--whitewidth) * 0.8);
+    height: 50px;
+    margin: 10px 0
+}
+
+label,
+h1, h2, h3, h4, h5, h6,
+.slogan{
+    font-family: Roboto, sans-serif;
+}
+
+h1.titulo,
+h2.titulo{
+    text-transform: lowercase;
+    font-family: 'Source Code Pro', monospace;
+    font-weight:bold;
+    color: var(--verde);
+}
+
+a.home{
+    text-decoration: none;
+}
+
+.botao{
+    border: 1px solid black;
+    padding: 10px;
+    width: calc(var(--whitewidth) / 2);
+    margin: 10px;
+    background-color: ghostwhite;
+    transition: all 0.3s;
+    font-family: Roboto;
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: var(--verde);
+    color: ghostwhite;
+    font-weight:bold;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+div#botoes {
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+div#linhas {
+    display:flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+button.botaopequeno {
+    width: calc(var(--whitewidth) / 4 - 10px);
+}
+
+.tituloplano {
+    text-transform: lowercase;
+    font-family: 'Source Code Pro', monospace;
+    font-weight:bold;
+    color: var(--verde);
+    text-decoration: none;
+}
+
+.autorplano {
+    font-family: 'Roboto', monospace;
+    font-weight:bold;
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.descricaoplano {
+    font-family: 'Roboto', monospace;
+    font-weight:bold;
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 1em;
+    text-align: justify;
+}
