@@ -17,7 +17,7 @@ describe("Suite com alguns testes de unidade", function() {
             expect(user.validaSenhas).toBeUndefined();
         });
 
-        it("Dados JSON de um ", function() {
+        it("Dados JSON são indefinidos", function() {
             const user = require('../src/scripts/cadastrarUsuario.js');
             expect(user.getDadosJSON).toBeUndefined();
         });
